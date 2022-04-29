@@ -1,0 +1,25 @@
+{
+  "name": "visual-thinking-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "linter": "node ./node_modules/eslint/bin/eslint.js .",
+    "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarioMog/visual-thinking-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarioMog/visual-thinking-api/issues"
+  },
+  "homepage": "https://github.com/MarioMog/visual-thinking-api#readme",
+  "devDependencies": {
+    "eslint": "^8.14.0",
+    "jest": "^26.6.3"
+  }
+}
