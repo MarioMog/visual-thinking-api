@@ -38,4 +38,22 @@ describe("Suit test for StudentService", () => {
         const res = StudentService.filterByCreditsOver500(studentsArray);
         expect(res.length).toBe(2);
     });
+    test("3.1) Getting students that have over 500cr invalid typeof", () => {
+        const studentsArray = 1;
+        
+        const res = StudentService.getAllStudents(studentsArray);
+        expect(res).toMatch(/students should be an array/);
+    });
+    test("3.2) Getting students that have over 500cr empty array", () => {
+        const studentsArray = [];
+        
+        const res = StudentService.getAllStudents(studentsArray);
+        expect(res).toMatch(/students cannot be an empty array/);
+    });
+    test("3.3) Getting all students", () => {
+        const studentsArray = Reader.readJsonFile("./test/services/visualpartnersCopy.json");
+        
+        const res = StudentService.getAllStudents(studentsArray);
+        expect(res.length).toBe(4);
+    });
 });
