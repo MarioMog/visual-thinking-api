@@ -1,10 +1,22 @@
 [
   {
     "id": "6264d5d8",
+    "credits": 508,
     "haveCertification": true
   },
   {
-    "id": "6264d5d8",
+    "id": "5264d5d8",
+    "credits": 717,
+    "haveCertification": false
+  },
+  {
+    "id": "4264d5d8",
+    "credits": 3,
+    "haveCertification": false
+  },
+  {
+    "id": "2264d5d8",
+    "credits": 500,
     "haveCertification": false
   }
 ]
